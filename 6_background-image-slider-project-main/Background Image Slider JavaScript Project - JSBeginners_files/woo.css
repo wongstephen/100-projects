@@ -1,0 +1,218 @@
+/*
+	Theme Name: Simply Charming Pro Theme
+	Theme URI: http://restored316designs.com/themes
+	Description: A mobile responsive and HTML5 feminine WordPress theme built for the Genesis Framework by Lauren Gaige of Restored 316.
+	Author: Restored 316 // Lauren Gaige
+	Author URI: http://www.restored316designs.com/
+	Copyright: Copyright (c) 2014, Restored 316 LLC, Originally Released 07/16/2014, Pro Released 11/23/2016
+	Version: 1.0.0
+
+	Template: genesis
+	Template Version: 2.0.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* WooCommerce
+--------------------------------------------- */
+
+.woocommerce .content {
+	background: #fff;
+	padding: 50px;
+	margin-bottom: 40px;
+}
+
+.single.woocommerce .content {
+	padding: 0px;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+	margin: 0 0 5%;
+	padding: .5%;
+	width: 33.3333%;
+}
+
+.woocommerce-page.columns-2 ul.products li.product,
+.woocommerce.columns-2 ul.products li.product {
+	width: 50%;
+}
+
+.woocommerce ul.cart_list li, 
+.woocommerce ul.product_list_widget li, 
+.woocommerce-page ul.cart_list li, 
+.woocommerce-page ul.product_list_widget li {
+	float: left;
+	padding: 1%;
+	width: 25%
+}
+
+.woocommerce ul.cart_list li a,
+.woocommerce ul.product_list_widget li a {
+	font-weight: 300;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.woocommerce ul.cart_list li img,
+.woocommerce ul.product_list_widget li img {
+	width: auto;
+}
+
+.woocommerce ul.products li.product h3 {
+	padding: 10px 0;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price {
+	color: #ffa4ad;
+}
+
+.single-product .price {
+	text-align: center;
+}
+
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button {
+	background-color: #FAEFEE;
+	border: 0;
+	border-radius: 0;
+	color: #333;
+	cursor: pointer;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 13px 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: normal;
+	width: auto;
+}
+
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover  {
+	background-color: #333;
+	color: #fff;
+}
+
+.woocommerce .quantity .qty {
+	padding: 6px;
+}
+
+.woocommerce ul.products li.product .price del {
+	display: inline-block;
+}
+
+.woocommerce ul.products li.product .onsale {
+	background: #ffa4ad;
+	right: 6px;
+	top: 6px;
+	margin: 0;
+	z-index: 9;
+}
+
+.woocommerce span.onsale {
+    background-color: #ffa4ad;
+    border-radius: 0;
+    color: #fff;
+    font-size: 0.857em;
+    font-weight: 700;
+    left: 0;
+    line-height: 3.236;
+    margin: 0;
+    min-height: 3.236em;
+    min-width: 3.236em;
+    padding: 0.202em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+.woocommerce-error::before,
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocommerce form .form-row .required {
+	color: #ffa4ad;
+}
+
+.woocommerce a.remove {
+	color: #ffa4ad !important;
+}
+
+.woocommerce a.remove:hover {
+	background: #ffa4ad;
+	color: #fff;
+}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+	background-color: #fff;
+	border-top-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.woocommerce table.shop_table,
+.woocommerce table.shop_table td {
+	border-color: #fff;
+}
+
+#add_payment_method table.cart td.actions .coupon .input-text, 
+.woocommerce-cart table.cart td.actions .coupon .input-text, 
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+	margin: 6px 10px;
+	border-color: #FAF9F6;
+	width: 125px;
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login, 
+.woocommerce form.register {
+	border-color: #FAF9F6;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li {
+	list-style: none;
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 30px;
+}
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+	background: #fff;
+}
+
+#add_payment_method #payment div.payment_box::before, 
+.woocommerce-cart #payment div.payment_box::before, 
+.woocommerce-checkout #payment div.payment_box::before {
+	border-color: transparent transparent #fff;
+}
+
+@media only screen and (max-width: 860px) {
+
+	.woocommerce ul.products li.product,
+	.woocommerce-page ul.products li.product {
+		width: 100%;
+	}
+
+}
