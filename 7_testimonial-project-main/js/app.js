@@ -24,14 +24,14 @@ btn.forEach(e => {
     if(e.classList.contains('prevBtn')) {
         e.addEventListener('click', function() {
             count--
-            if (count === -1) {count = 4}
+            if (count === -1) {count = customers.length}
             customerTest (count) 
         })
     }
     if(e.classList.contains('nextBtn')) {
         e.addEventListener('click', function()  {
             count++
-            if (count === 5) {count = 0}
+            if (count === customers.length) {count = 0}
             customerTest (count) 
         })
     }
