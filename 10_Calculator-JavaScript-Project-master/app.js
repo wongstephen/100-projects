@@ -1,30 +1,26 @@
-//Wrap code in an IIFE
-(function(){
-  
-  let screen = document.querySelector('.screen');
-  let buttons = document.querySelectorAll('.btn');
-  let clear = document.querySelector('.btn-clear');
-  let equal = document.querySelector('.btn-equal');
-  
-  //retrieve data from numbers that are clicked
-  buttons.forEach(function(button){
-    button.addEventListener('click', function(e){
-      let value = e.target.dataset.num;
-      screen.value += value;
+const btn = document.querySelectorAll('.btn')
+const btnClear = document.querySelector('.btn-clear')
+const btnEqual = document.querySelector('.btn-equal')
+const screen = document.querySelector('.screen')
+
+// screen.value = 'test'
+// console.log(screen)
+let storedValue = []
+btn.forEach(e => {
+    e.addEventListener('click', function() {
+        storedValue.push(e.dataset.num);
+        screen.value = storedValue.join('')
     })
-  });
-  
-  equal.addEventListener('click', function(e){
-    if(screen.value === ''){
-      screen.value = 'Please Enter a Value';
-    } else {
-      let answer = eval(screen.value);
-      screen.value = answer;
-    }
-  })
-  
-  clear.addEventListener('click', function(e){
-    screen.value = '';
-  })
- 
-})(); //end IIFE
+})
+
+//clear button
+btnClear.addEventListener('click', function(){
+    storedValue.length = 0;
+    screen.value = "" 
+})
+
+btnEqual.addEventListener('click', function(){
+    const calc = Number(storedValue.join(''))
+    calc+0
+    console.log(calc)
+})
